@@ -1,0 +1,639 @@
+.home-page, .checkout-page, .shop-page, .video-page {    
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
+}
+
+.home-page, .shop-page, .video-page{
+    background-color: white;
+}
+
+.site-header {
+    height: 95px;
+    background-color: #00b3c8;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inner-container {
+    height: 95px;
+    width: 878px; /*960px - 42px padding -40px right padding*/
+    margin: 0 auto;
+    padding-left: 42px;    
+    padding-right: 40px;
+}
+
+/*for screen readers; visually hides the h1*/
+.visuallyhidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+
+.inner-container img, .inner-container nav, .inner-container ul, .inner-container li{
+    float: left;  
+}
+
+.inner-container img {
+    padding-top: 19px;
+}
+
+.inner-container nav {
+    padding-left: 44px;
+    float: right;
+}
+
+.inner-container ul {
+    float: left;
+    list-style: none;
+    width: 300px;
+    padding-right: 54px;
+}
+
+.inner-container li {
+    font-size: 24px; 
+    margin-top: 38px;
+}
+
+.shop-page-link {
+    margin-right: 33px;
+}
+
+.checkout-page-link {
+    margin-right: 25px;
+}
+
+.inner-container > nav a:link, .inner-container > nav a:visited {
+    color: #fffefe;
+}
+
+.inner-container > nav a:hover, .inner-container > nav a:active {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fffefe;
+}
+
+.search-site {
+    height: 35px;
+    width: 241px;
+    border: 0px;
+    border-radius: 4px;
+    margin-top: 29px;
+    background-image: url(../img/spy-glass-icon.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 59px;
+    padding-right: 10px;
+/*Neue Helvetica isn't on Google Fonts. Using Montserrat with -1.75 letter spacing*/
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1.75;
+    font-size: 13.46px;
+    float: right;
+}
+
+/*These are mostly the main elements in each webpage and the home page's header content and it's sections; the one ones that need to be centered in the 960px frame*/
+.main-header-content, .home-page section, .shop-page main, .checkout-page main, .video-page main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*******CHECKOUT PAGE******/
+.payment-form {
+    width: 505px; /*550px - 1px border-right - 44px padding-right*/
+    float: left;
+    border-right: 1px solid #e1e1e1;
+    padding-top: 62px;
+    padding-right: 44px;
+}
+
+.cart {
+    float: left;
+    padding: 78px 0px 247px 30px;
+    width: 351px;
+}
+
+/*Checkout Header*/
+.checkout-header {
+    margin-left: 35px;    
+}
+
+.checkout-header > h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.second-nav ul {    
+    margin-bottom: 74px;
+}
+
+.second-nav li {
+    font-size: 9px;
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.second-nav a {
+    margin-right: 8px;
+    color: #178fc5;
+}
+
+/*Payment Form Typography*/
+.email, .cc-info input, .ship-ad input, .make-payment {
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    padding: 0 0 0 9px;
+    height: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+}
+
+.second-nav li, .cust-info p, .pay-method p, .ship-ad-form p, .item-name {
+    color: #7c7c7c;
+}
+
+/*Customer Information*/
+.cust-info {
+    margin-left: 40px;
+    margin-bottom: 87px;
+}
+
+.cust-info h3 {
+    margin-bottom: 17px;
+}
+
+.email {
+    width: 455px; /*466px - 2px border - 9px padding-left*/
+    margin-bottom: 11px;
+}
+
+.cust-info p {
+    font-size: 11px;
+}
+
+.login-link {
+    color: #2797c9;
+}
+
+/*Payment*/
+.pay-method {
+    margin-left: 37px;
+    margin-bottom: 98px;
+}
+
+.pay-method h3 {
+    margin-left: 4px;
+    margin-bottom: 6px;
+}
+
+.pay-method p, .ship-ad-form p {
+    margin-left: 2px;
+    margin-bottom: 18px;
+    font-size: 10px;
+}
+
+.credit-card {
+    width: 467px; /*469px - 2px border*/
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    padding-top: 18px;
+}
+
+.credit-card h4 {
+    font-size: 11px;
+    margin-bottom: 17px;
+    margin-left: 12px;
+}
+
+.cc-info {
+    border-top: 1px solid #e1e1e1;
+    padding: 14px 13px 19px 14px;
+    background-color: #ececec;
+}
+
+.cc-num {
+    display: block;
+    width: 429px; /*467px - 13px padding-right - 14px padding-left - 2px border - 9px padding-left */
+    background-image: url(../img/lock-icon.jpg);
+    background-repeat: no-repeat;
+    background-position: 417px 10px;
+    margin-bottom: 9px;
+}
+
+.cc-name, .cc-date {
+    width: 204.5px; /*(429px / 2) - 2px border - 8px border*/
+    margin-right: 8px;
+    float: left;
+}
+
+.cc-date, .cc-cw {
+    width: 93.25px; /*(429px / 4) - 2px border - 8px border*/
+}
+
+.cc-cw {
+    background-image: url(../img/info-icon.jpg);
+    background-repeat: no-repeat;
+    background-position: 81px 10px;
+}
+
+/*Shipping Address*/
+.ship-ad {
+    margin-left: 38px;
+    width: 467px;
+}
+
+.ship-ad h3 {
+    margin-left: 2px;
+    margin-bottom: 13px;
+}
+
+.f-name, .l-name, .address, .address-2, .city, .phone, .fax ,.p-code {
+    float: left;
+    width: 218.5px; /*(467px -8px margin-right -4px border -18px padding-left) / 2*/
+    margin-bottom: 9px;
+}
+
+.f-name, .address, .phone, .fax {
+    margin-right: 8px;
+}
+
+.address-2 {
+    width: 144px; /*(467px -16px margin-right -6px border -27px padding-left) / 3*/
+/*Adjusted a bit to fit the placeholder text nicely*/
+}
+
+.address {
+    width: 293px; /*(139.33px *2) +8px margin-right +2px border*/
+/*Adjusted a bit to fit .adress-2's placeholder text nicely*/
+}
+
+.city, .phone, .fax ,.p-code {
+    width: 456px; /*467px -2px border -9px padding-right*/
+}
+
+.phone, .fax {
+    width: 162px; /*(94px *3) -8px margin-right - 2px border*/
+}
+
+.p-code {
+   width: 94px; /*(456/4) -16px margin-right -4px border*/
+}
+
+.phone, .fax ,.p-code {
+    margin-bottom: 0px
+}
+
+.save-info {
+    float: left;
+    margin: 12.33px 0px 0px 0px;
+}
+
+.save-info:hover, .make-payment:hover {
+    cursor: pointer;    
+}
+
+.ship-ad-form p {    
+    margin: 23px 0 0 7px;
+    float: left;
+}
+
+.make-payment {
+    height: 46px;
+    width: 192px;
+    margin-top: 52px;
+    background-color: #1990c6;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-bottom: 247px;
+}
+
+.make-payment:hover {
+    background-color: #00b3c8;
+}
+
+.checkout-page footer {
+    margin-bottom: 0px;
+}
+
+/*Cart Section*/
+.item-info, .sale-details {
+    float: left;
+    width: 351px;
+}
+
+.item-info img {
+    float: left;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    padding: 4px 12px 4px 12px;
+    margin-right: 12px;
+    margin-bottom: 11px;
+}
+
+.item-name {
+    font-size: 12px;
+    float: left;
+    font-weight: bold;
+    width: 181px;
+}
+
+.item-cost {
+    width: 83px;
+}
+
+.item-cost, .cost-info, .cost {
+    float: left;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.subtotal td {    
+    border-top: 2px solid #eeeeee;
+    padding-top: 21px;
+    padding-bottom: 14px;
+}
+
+.shipping td {
+    padding-bottom: 16px;
+    border-bottom: 2px solid #eeeeee;    
+}
+
+.total td{
+    padding-top: 17px;    
+}
+
+.total .cost-info, .total .cost {
+    font-weight: bold;
+    padding-left: 5px;
+    color: #4b4b4b;
+}
+
+.total .cost {
+    font-size: 20px;
+}
+
+.currency {
+    color: #bfbcbc;
+    margin-right: 10px;
+    font-size: 11px;
+}
+
+.cost-info, .cost {
+    width: 170px;
+    float: none;
+    text-align: left;
+}
+
+.cost-info {
+    color: #7b7b7b;
+}
+
+.item-cost, .subtotal .cost, .shipping .cost{
+    padding-right: 3px;
+}
+
+.item-cost, .cost {
+    text-align: right;
+}
+
+/*******HOME PAGE*******/
+/*Main Header*/
+.main-header {
+    background-color: black;
+    height: 382px;
+    margin-bottom: 57px;
+}
+
+.main-header-content {
+    background-image: url(../img/site-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 382px;
+}
+.main-header h2 {
+    color: white;
+    font-size: 84px;    
+    padding-top: 80px;
+    margin-left: 34px;
+    margin-bottom: 7px;
+}
+
+.main-header p {
+    color: #a19d9d;
+    font-size: 28px;
+    margin-left: 109px;
+    margin-bottom: 52px;
+}
+
+.main-header a {
+    margin-left: 110px;
+    border-radius: 4px;
+    border: none;
+    background-color: #0ba9c1;
+    color: white;
+    font-size: 26.78px;
+    padding: 18px 28px 17px 28px;
+}
+
+.main-header a:hover {    
+    background-color: #a19d9d;    
+}
+
+/*Articles*/
+.home-page .team-news {    
+    margin-bottom: 90px;  
+}
+
+.team-news h3 {
+    margin-left: 59px;
+    font-size: 56px;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+}
+
+.article, .article-last {
+    height: 225px;
+    padding-left: 44px;
+    padding-right: 53px;
+    margin-bottom: 72px;
+}
+
+.article img, .article-last img {
+    float: left;
+    margin-right: 71px;
+}
+
+.article-details {
+    float: left;
+    padding-top: 5px;
+    width: 392px;
+}
+
+.article-details h4, .video-item h3 {
+    font-size: 36px;
+    padding-left: 1px;
+    margin-bottom: 24px;
+/*Helvetica isn't on Google Fonts. Using Montserrat with -1.75 letter spacing*/
+    letter-spacing: -1.75px;
+}
+
+.article-details p {
+    font-size: 20px;
+    margin-bottom: 28px;
+/*Helvetica isn't on Google Fonts. Using Montserrat with -1.75 letter spacing*/
+    letter-spacing: -1.75px;
+    line-height: 1.2;
+}
+
+.article-details a {
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 14px 9px 13px 10px;
+}
+
+.article-details a:hover {
+    background-color: #0ba9c1;
+}
+
+.article-last {
+    margin-bottom: 0px;
+}
+
+/*******FOOTER*******/
+/*Warning: Anything below applies across the site*/
+footer {
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.sponsors {
+    margin-left: 64px;
+    margin-right: 64px;    
+}
+
+.sponsors li {
+    float: left;
+    margin-bottom: 32px;
+    margin-right: 63px;
+}
+
+.sponsors .last-li {    
+    margin-right: 0px;
+}
+
+.copyright {
+    margin-left: 213px;
+    margin-right: 213px;
+}
+
+.copyright li {
+    float: left;
+    margin-right: 45px;    
+    font-family: 'Verdana', sans-serif;
+    font-size: 10px;
+    color: #b5b5b5;
+}
+
+.copyright a, .video-item a:hover {
+    color: #b5b5b5;
+}
+
+.copyright a:hover, .video-item a {    
+    color: #00b3c8;
+}
+
+.copyright .last-li {
+    margin-right: 0px;
+}
+
+/*******SHOP PAGE*******/
+.shop-page main, .video-page main {
+    margin-top: 101px;
+}
+
+.shop h2, .videos h2 {
+    font-family: 'Verdana', 'sans-serif';
+    font-size: 48px;
+    padding-bottom: 9px;
+    border-bottom: 2px solid #00b3c8;
+    margin: 0px 42px 114px 42px;
+}
+
+.shop-items-list {
+    font-size: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.shop-items-list tr {
+    float: left;
+    margin-bottom: 161px;
+}
+
+.shop-items-list td {
+    width: 210px;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.25;
+    margin-right: 24px;
+    height: 322px;
+    width: 210px;
+}
+
+.shop-items-list .last-row-item {
+    margin-right: 0px;
+}
+
+.shop-items-list img {
+    margin-bottom: 22px;    
+    height: 240px;
+    width: 176px;
+}
+
+.shop-items-list h3 {
+    color: #7c7c7c;
+}
+
+.shop-items-list p {
+    color: #fc0101;
+}
+
+.shop-items-list .shop-items-last-row {
+    margin-bottom: 154px;
+}
+
+/*******VIDEOS PAGE*******/
+.video-item {
+    width: 560px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    border-bottom: 4px solid #00b3c8;
+}
+
+.video-item iframe {
+    margin-bottom: 40px;
+}
+.video-item span {
+    font-weight: bold;
+}
+
+.video-item p {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.video-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+}

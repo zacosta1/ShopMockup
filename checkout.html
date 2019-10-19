@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<!--meta tag for characters to be compatible with browsers-->
+		<!--[if lt IE9]
+			<script src="scripts/html5shiv/html5shiv.js"></script>
+			[end if]-->
+		<title>Team Sky | Checkout</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/styles.css">
+        <!--google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	</head>
+	<body class="checkout-page">
+		<header class="site-header">
+            <div class="inner-container">
+                <h1 class="visuallyhidden">Team Sky</h1>
+                <a href="index.html"><img src="img/team-sky-logo.png" alt="Team Sky Logo"></a>
+                <nav class="clearfix">
+                    <ul>
+                        <li class="shop-page-link"><a href="shop.html">shop</a></li>
+                        <li class="checkout-page-link"><a href="checkout.html">checkout</a></li>
+                        <li class="video-page-link"><a href="video.html">video</a></li>
+                    </ul>
+                    <input class="search-site" type="search" name="search-site" placeholder="search">
+                </nav>
+            </div>
+		</header>
+		<main class="clearfix">
+            <section class="payment-form">
+                <header class="checkout-header">
+                    <h2>Team Sky Payment Checkout</h2>
+                    <nav class="second-nav">
+                        <ul class="clearfix">
+                            <li><a href="#">Cart</a>></li>
+                            <li><a href="#">Customer Information</a>></li>
+                            <li><a href="#">Shipping method</a>></li>
+                            <li>Payment method</li>
+                        </ul>
+                    </nav>
+                </header>
+                <form>
+                    <div class="cust-info">
+                        <h3>Customer Information</h3>
+                        <input class="email" type="email" name="email" placeholder="Email">
+                        <p>Already have an account with us? <a class="login-link" href="#">Log in</a></p>
+                    </div>
+                    <div class="pay-method">
+                        <h3>Payment Method</h3>
+                        <p>All transactions are secure and encrypted. Credit card information is never stored.</p>
+                        <fieldset class="credit-card">
+                            <h4>Credit card</h4>
+                            <div class="cc-info">
+                                <input class="cc-num" type="text" name="cc-num" placeholder="Card number">
+                                <input class="cc-name" type="text" name="cc-name" placeholder="Name on card">
+                                <input class="cc-date" type="text" name="cc-date" placeholder="MM/YY">
+                                <input class="cc-cw" type="text" name="cc-cw" placeholder="CW">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="ship-ad">
+                        <h3>Shipping address</h3>
+                        <fieldset class="ship-ad-form">
+                            <input class="f-name" type="text" name="f-name" placeholder="First name">
+                            <input class="l-name" type="text" name="l-name" placeholder="Last name">
+                            <input class="address" type="text" name="address" placeholder="Address">
+                            <input class="address-2" type="text" name="address-2" placeholder="Apt, suite, etc. (optional)">
+                            <input class="city" type="text" name="city" placeholder="City">
+                            <input class="phone" type="tel" name="phone" placeholder="Phone number">
+                            <input class="fax" type="text" name="fax" placeholder="Fax number">
+                            <input class="p-code" type="text" name="p-code" placeholder="Postal Code">
+                            <input class="save-info" type="checkbox" name="save-info">
+                            <p>Save this information for next time</p>
+                            <button class="make-payment" type="submit">Make Payment</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </section>
+            <section class="cart">
+                <div class="item-info">
+                    <img src="img/product-shot.png" alt="Product Preview">
+                    <h3 class="item-name">Team Sky Short Sleve Brevet Jersey</h3>
+                    <p class="item-cost">$225.00</p>
+                </div>
+                <div class="sale-details">
+                    <table>
+                        <tr class="subtotal">
+                            <td class="cost-info">Subtotal</td>
+                            <td class="cost">$225.00</td>
+                        </tr>
+                        <tr class="shipping">
+                            <td class="cost-info">Shipping</td>
+                            <td class="cost">$18.00</td>
+                        </tr>
+                        <tr class="total">
+                            <td class="cost-info">Total</td>
+                            <td class="cost"><span class="currency">CAD</span>$243.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>
